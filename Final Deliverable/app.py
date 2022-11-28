@@ -16,7 +16,7 @@ def index():
 def checkEligibility():
     return render_template('Demo2.html')
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST', 'GET'])
 def predict():
     greScore = int(request.form['greScore'])
     toeflScore = int(request.form['toeflScore'])
